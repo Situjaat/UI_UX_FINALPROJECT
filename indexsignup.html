@@ -88,13 +88,10 @@
 </body>
 
 <script>
-let arr=[];
+let arr=JSON.parse(localStorage.getItem("user")) || [];
 let form=document.getElementById("form")
-let name = document.getElementById("name")
-let email = document.getElementById("email")
-let mobile = document.getElementById("mobile")
-let password = document.getElementById("password")
 let btn = document.getElementById("btn")
+
 btn.addEventListener("click",(e) =>{
     e.preventDefault()
     let obj={
